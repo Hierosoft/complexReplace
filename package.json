@@ -1,0 +1,65 @@
+{
+  "name": "complex-replace",
+  "displayName": "Complex Replace",
+  "description": "A Visual Studio Code extension for customizable code casting on text selection.",
+  "version": "0.1.0",
+  "publisher": "HierosoftLLC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hierosoft/complexReplace.git"
+  },
+  "homepage": "https://github.com/Hierosoft/complexReplace",
+  "bugs": {
+    "url": "https://github.com/Hierosoft/complexReplace/issues"
+  },
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:complexReplace.cast"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "complexReplace.cast",
+        "title": "Cast Selection"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Complex Replace Settings",
+      "properties": {
+        "complexReplace.cast_string": {
+          "type": "string",
+          "default": "bytearray",
+          "description": "Type to cast the selection to."
+        },
+        "complexReplace.cast_syntax": {
+          "type": "string",
+          "enum": ["call", "C"],
+          "default": "call",
+          "description": "Syntax for casting: 'call' (function style) or 'C' (C-style casting)."
+        },
+        "complexReplace.extra_parenthesis": {
+          "type": "boolean",
+          "default": true,
+          "description": "Add extra parentheses for C-style casting."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vscode": "^1.78.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Hierosoft LLC",
+    "url": "https://github.com/Hierosoft"
+  }
+}

@@ -128,3 +128,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Environment files
+.env.*.local
+
+# VS Code extension packaging
+*.vsix
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Package lock files
+package-lock.json
