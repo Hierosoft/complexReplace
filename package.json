@@ -18,6 +18,7 @@
   "categories": ["Other"],
   "activationEvents": ["onCommand:complexreplace.cast"],
   "main": "./out/extension.js",
+  "icon": "icon.png",
   "contributes": {
     "commands": [
       {
