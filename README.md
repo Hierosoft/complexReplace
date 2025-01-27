@@ -3,10 +3,13 @@
 Transform code in syntax-aware ways.
 
 ## Features
-- "Complex Replace: Cast Selection" command.
-  - Configure the type to cast to (e.g., `bytearray` (default) or `int`).
-  - Choose between `call` syntax (`int([...])`) or `C` syntax (`(int)[...]`).
-  - Optionally add extra parentheses with `C` syntax (`(bytearray)([...])`).
+### Cast Selection
+(Shift+Alt+C, or shift+cmd+c on Mac)
+Wrap a nested structure or long literal collection in a call or cast. Example: `[0xFF, 0x00]` (selected), result: `bytearray([0xFF, 0x00])`. Settings:
+- Configure the type to cast to (e.g., `bytearray` (default) or `int`).
+- Choose between `call` syntax (`int([...])`) or `C` syntax (`(int)[...]`).
+- (enabled by default) Optionally still add parentheses around the argument when using `C` syntax (`(bytearray)([...])`).
+
 
 ## Settings
 
