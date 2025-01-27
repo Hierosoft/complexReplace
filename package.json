@@ -25,6 +25,14 @@
         "title": "Complex Replace: Cast Selection"
       }
     ],
+    "keybindings": [
+      {
+        "command": "complexreplace.cast",
+        "key": "shift+alt+c",
+        "mac": "shift+cmd+c",
+        "when": "editorTextFocus"
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "Complex Replace Settings",

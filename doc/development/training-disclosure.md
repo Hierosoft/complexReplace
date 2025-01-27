@@ -33,3 +33,7 @@ what should the folder and file structure be?
 what is the gitignore for a visual studio code extension? Is there one in github.com/gitignore that should be used, or one from microsoft, or what?
 
 Ok, change and/or add metadata indicating the name of the extension is complexReplace by Hierosoft LLC and the source code and website is https://github.com/Hierosoft/complexReplace (report issues at https://github.com/Hierosoft/complexReplace/issues)
+
+- 2025-01-27
+
+Can I add a hotkey for the command in the extension code or extension package metadata itself or how can I do so in visual studio code?
