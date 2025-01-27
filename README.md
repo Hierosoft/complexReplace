@@ -1,12 +1,12 @@
 # Complex Replace for VSCode/Codium
 
-Cast selected code to a specific type using configurable syntax in Visual Studio Code.
+Transform code in syntax-aware ways.
 
 ## Features
-
-- Configure the type to cast to (e.g., `bytearray`).
-- Choose between `call` syntax (`bytearray([...])`) or `C` syntax (`(bytearray)[...]`).
-- Optionally add extra parentheses with `C` syntax (`(bytearray)([...])`).
+- "Complex Replace: Cast Selection" command.
+  - Configure the type to cast to (e.g., `bytearray` (default) or `int`).
+  - Choose between `call` syntax (`int([...])`) or `C` syntax (`(int)[...]`).
+  - Optionally add extra parentheses with `C` syntax (`(bytearray)([...])`).
 
 ## Settings
 
