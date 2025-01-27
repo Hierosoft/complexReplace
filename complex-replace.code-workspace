@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"cSpell.words": [
+			"bytearray",
+			"complexreplace",
+			"Gustafson",
+			"Hierosoft",
+			"IANAL",
+			"Poikilos",
+			"yarnrc"
+		]
+	}
+}
