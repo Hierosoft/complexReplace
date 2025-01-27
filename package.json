@@ -16,12 +16,12 @@
     "vscode": "^1.78.0"
   },
   "categories": ["Other"],
-  "activationEvents": ["onCommand:complexReplace.cast"],
+  "activationEvents": ["onCommand:complexreplace.cast"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "complexReplace.cast",
+        "command": "complexreplace.cast",
         "title": "Cast Selection"
       }
     ],
@@ -29,18 +29,18 @@
       "type": "object",
       "title": "Complex Replace Settings",
       "properties": {
-        "complexReplace.cast_string": {
+        "complexreplace.cast_string": {
           "type": "string",
           "default": "bytearray",
           "description": "Type to cast the selection to."
         },
-        "complexReplace.cast_syntax": {
+        "complexreplace.cast_syntax": {
           "type": "string",
           "enum": ["call", "C"],
           "default": "call",
           "description": "Syntax for casting: 'call' (function style) or 'C' (C-style casting)."
         },
-        "complexReplace.extra_parenthesis": {
+        "complexreplace.extra_parenthesis": {
           "type": "boolean",
           "default": true,
           "description": "Add extra parentheses for C-style casting."
@@ -51,13 +51,21 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -w -p ./"
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "vscode": "^1.78.0",
-    "@types/node": "^16.0.0",
-    "@types/vscode": "^1.78.0"
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
   },
   "license": "MIT",
   "author": {

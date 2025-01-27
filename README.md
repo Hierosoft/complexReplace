@@ -1,4 +1,4 @@
-# Code Caster
+# ComplexReplace
 
 Cast selected code to a specific type using configurable syntax in Visual Studio Code.
 
@@ -10,11 +10,11 @@ Cast selected code to a specific type using configurable syntax in Visual Studio
 
 ## Settings
 
-- `codeCaster.castString`: The type to cast the selection to (default: `bytearray`).
-- `codeCaster.castSyntax`: The syntax for casting:
+- `complexreplace.castString`: The type to cast the selection to (default: `bytearray`).
+- `complexreplace.castSyntax`: The syntax for casting:
   - `call`: Adds parentheses for a function call.
   - `C`: Uses C-style casting syntax.
-- `codeCaster.extraParenthesis`: Adds extra parentheses when using `C` syntax.
+- `complexreplace.extraParenthesis`: Adds extra parentheses when using `C` syntax.
 
 ## Usage
 
@@ -26,9 +26,9 @@ Cast selected code to a specific type using configurable syntax in Visual Studio
 ### Settings
 ```json
 {
-  "codeCaster.castString": "bytearray",
-  "codeCaster.castSyntax": "C",
-  "codeCaster.extraParenthesis": true
+  "complexreplace.castString": "bytearray",
+  "complexreplace.castSyntax": "C",
+  "complexreplace.extraParenthesis": true
 }
 ```
 
