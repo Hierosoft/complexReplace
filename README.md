@@ -1,4 +1,4 @@
-# ComplexReplace
+# Complex Replace for VSCode/Codium
 
 Cast selected code to a specific type using configurable syntax in Visual Studio Code.
 
@@ -54,6 +54,9 @@ Cast selected code to a specific type using configurable syntax in Visual Studio
 1. **Install Dependencies**: Run `npm install` in the project directory.
 2. **Test the Extension**: Open the extension in VSCode and press `F5` to launch a new VSCode window with the extension active.
 3. **Publish**: Use the `vsce` tool to package and publish the extension.
-
-This should meet all your requirements for the extension!
-
+   - Validate your development environment using steps 1 & 2 above first.
+```
+npm install -g @vscode/vsce
+vsce package
+vsce publish
+```

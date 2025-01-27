@@ -6,14 +6,14 @@
   "publisher": "HierosoftLLC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hierosoft/complexReplace.git"
+    "url": "https://github.com/Hierosoft/vscode-complex-replace.git"
   },
-  "homepage": "https://github.com/Hierosoft/complexReplace",
+  "homepage": "https://github.com/Hierosoft/vscode-complex-replace",
   "bugs": {
-    "url": "https://github.com/Hierosoft/complexReplace/issues"
+    "url": "https://github.com/Hierosoft/vscode-complex-replace/issues"
   },
   "engines": {
-    "vscode": "^1.78.0"
+    "vscode": "^1.96.0"
   },
   "categories": ["Other"],
   "activationEvents": ["onCommand:complexreplace.cast"],
@@ -22,7 +22,7 @@
     "commands": [
       {
         "command": "complexreplace.cast",
-        "title": "Cast Selection"
+        "title": "Complex Replace: Cast Selection"
       }
     ],
     "configuration": {
